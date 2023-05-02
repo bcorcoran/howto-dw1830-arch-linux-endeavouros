@@ -2,7 +2,10 @@
 
 This guide is a how to get a Dell DW1830 Wifi/BT card (Broadcom 43602 + Broadcom BCM20703A1) working in Arch Linux or EndeavourOS
 
-I can't confirm on Arch Linux specifically, but EndeavourOS incorrectly detects the DW1830 and loads the wrong kernel drivers. As a side effect, the bluetooth service is disabled by default. The solution is to uninstall `broadcom-wl-dkms` and/or `broadcom-wl` and then enable the bluetooth service.
+I can't confirm on Arch Linux specifically, but EndeavourOS incorrectly detects the DW1830 and loads the wrong kernel drivers. As a side effect, the bluetooth service is disabled by default. In my particular instance, the DW1830 is installed in a Dell XPS 15 9560. This is a non-OEM setup so it's possible not everything in this guide will apply.
+
+## Guide
+The general solution is to uninstall `broadcom-wl-dkms` and/or `broadcom-wl` and then enable the bluetooth service.
 
 For example:
 
@@ -19,8 +22,10 @@ Next, enable the bluetooth service:
 
 At this point, you should be able to restart and you'll have working WIFI and Bluetooth.
 
+## Troubleshooting
 If Bluetooth is not working, head over to https://github.com/winterheart/broadcom-bt-firmware and follow the instructions for installing the appropriate BT firmware. Take special note of the section titled "Notes about combined WiFi+Bluetooth devices"
 
+If you're still running into issues, become familiar with `dmesg`, `lspci`, `lsmod`, `modprobe`, `depmod` which are referenced in the wiki links below. These commands combined with a sprinkling of `grep` should get you the information you need to solve your specific issues.
 
 ### Credits: 
 - [nsvdhx on the Arch forums](https://bbs.archlinux.org/viewtopic.php?id=267367)
