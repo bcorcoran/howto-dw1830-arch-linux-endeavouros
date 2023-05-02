@@ -23,5 +23,6 @@ If Bluetooth is not working, head over to [https://github.com/winterheart/broadc
 
 
 ### Credits: 
-- nsvdhx on the Arch forums: [https://bbs.archlinux.org/viewtopic.php?id=267376]
-- @winterheart for the broadcom bt drivers
+- [nsvdhx on the Arch forums](https://bbs.archlinux.org/viewtopic.php?id=267367)
+- [@winterheart](https://github.com/winterheart) for the broadcom bt drivers
+- The Arch wiki pages for [Broadcom Wireless](https://wiki.archlinux.org/title/broadcom_wireless) and [Bluetooth](https://wiki.archlinux.org/title/bluetooth)
