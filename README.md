@@ -19,4 +19,9 @@ Next, enable the bluetooth service:
 
 At this point, you should be able to restart and you'll have working WIFI and Bluetooth.
 
-If Bluetooth is not working, head over to [https://github.com/winterheart/broadcom-bt-firmware] and follow the instructions for installing the appropriate BT firmware.
+If Bluetooth is not working, head over to [https://github.com/winterheart/broadcom-bt-firmware] and follow the instructions for installing the appropriate BT firmware. Take special note of the section titled "Notes about combined WiFi+Bluetooth devices"
+
+
+### Credits: 
+- nsvdhx on the Arch forums: https://bbs.archlinux.org/viewtopic.php?id=267376
+- @winterheart for the broadcom bt drivers
